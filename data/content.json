@@ -1,0 +1,534 @@
+{
+ "projects": [
+  {
+   "id": "s00-finalement",
+   "ref": "Finalement",
+   "title": "Finalement",
+   "label": "",
+   "type": "Long-métrage",
+   "period": "2024",
+   "role": "Troisième assistant réalisateur",
+   "youtube": "",
+   "text": "Assistant de production · Les Films 13 · 2022–2023. Préproduction au sein des Films 13 : préparation des dossiers de financement, coordination logistique, planification des tournages et échanges avec les départements artistiques et techniques.",
+   "credits": "",
+   "keys": [
+    "ar",
+    "prod"
+   ],
+   "visible": true,
+   "order": 0,
+   "media": []
+  },
+  {
+   "id": "s01-chou-fleur",
+   "ref": "Chou-Fleur",
+   "title": "Chou-Fleur",
+   "label": "",
+   "type": "Court-métrage",
+   "period": "2025",
+   "role": "Premier assistant réalisateur",
+   "youtube": "https://youtu.be/-3V7P8us_MA",
+   "text": "",
+   "credits": "",
+   "keys": [
+    "ar"
+   ],
+   "visible": true,
+   "order": 1,
+   "media": []
+  },
+  {
+   "id": "s02-dj-de-paname",
+   "ref": "DJ de Paname",
+   "title": "DJ de Paname",
+   "label": "",
+   "type": "Série photo",
+   "period": "",
+   "role": "",
+   "youtube": "",
+   "text": "",
+   "credits": "",
+   "keys": [
+    "photo"
+   ],
+   "visible": true,
+   "order": 2,
+   "media": []
+  },
+  {
+   "id": "s03-showreel-triiiple",
+   "ref": "Showreel Triiiple",
+   "title": "Showreel Triiiple",
+   "label": "",
+   "type": "Bande démo · 2023/24",
+   "period": "2023 / 2024",
+   "role": "",
+   "youtube": "",
+   "text": "",
+   "credits": "",
+   "keys": [
+    "real"
+   ],
+   "visible": true,
+   "order": 3,
+   "media": []
+  },
+  {
+   "id": "s04-cartier-fauna",
+   "ref": "Cartier Fauna",
+   "title": "Cartier Fauna",
+   "label": "",
+   "type": "Projet de marque",
+   "period": "2026",
+   "role": "Assistant de production",
+   "youtube": "",
+   "text": "Each fable celebrates one of Cartier’s emblematic animals through a unique fresco crafted with exceptional savoir-faire.",
+   "credits": "",
+   "keys": [
+    "prod"
+   ],
+   "visible": true,
+   "order": 4,
+   "media": []
+  },
+  {
+   "id": "s05-foot-a-deauville",
+   "ref": "Foot à Deauville",
+   "title": "Foot à Deauville",
+   "label": "",
+   "type": "Série photo",
+   "period": "",
+   "role": "",
+   "youtube": "",
+   "text": "",
+   "credits": "",
+   "keys": [
+    "photo"
+   ],
+   "visible": true,
+   "order": 5,
+   "media": []
+  },
+  {
+   "id": "s06-vacance-a-la-mer",
+   "ref": "Vacance à la mer",
+   "title": "Vacance à la mer",
+   "label": "",
+   "type": "Série photo",
+   "period": "",
+   "role": "",
+   "youtube": "",
+   "text": "",
+   "credits": "",
+   "keys": [
+    "photo"
+   ],
+   "visible": true,
+   "order": 6,
+   "media": []
+  },
+  {
+   "id": "s07-la-verite-braie",
+   "ref": "La vérité Braie",
+   "title": "La vérité Braie",
+   "label": "",
+   "type": "Court-métrage",
+   "period": "2025",
+   "role": "Premier assistant réalisateur",
+   "youtube": "https://youtu.be/Sr70G9QAQ9o",
+   "text": "Photos de tournage : Melen Noguez & Elsa Desurvire.",
+   "credits": "",
+   "keys": [
+    "ar"
+   ],
+   "visible": true,
+   "order": 7,
+   "media": []
+  },
+  {
+   "id": "s08-reels-gma-belleville",
+   "ref": "Reels GMA Belleville",
+   "title": "Reels GMA Belleville",
+   "label": "",
+   "type": "Projet artistique",
+   "period": "",
+   "role": "",
+   "youtube": "",
+   "text": "",
+   "credits": "",
+   "keys": [
+    "art"
+   ],
+   "visible": true,
+   "order": 8,
+   "media": []
+  },
+  {
+   "id": "s09-yous-est-une-muse-etrange",
+   "ref": "Yous est une muse étrange",
+   "title": "Yous est une muse étrange",
+   "label": "",
+   "type": "Série photo",
+   "period": "",
+   "role": "",
+   "youtube": "",
+   "text": "",
+   "credits": "",
+   "keys": [
+    "photo"
+   ],
+   "visible": true,
+   "order": 9,
+   "media": []
+  },
+  {
+   "id": "s10-relou-lambiance",
+   "ref": "Relou l’ambiance",
+   "title": "Relou l’ambiance",
+   "label": "",
+   "type": "Série photo",
+   "period": "",
+   "role": "",
+   "youtube": "",
+   "text": "",
+   "credits": "",
+   "keys": [
+    "photo"
+   ],
+   "visible": true,
+   "order": 10,
+   "media": []
+  },
+  {
+   "id": "s11-smadjas-set",
+   "ref": "Smadja’s Set",
+   "title": "Smadja’s Set",
+   "label": "",
+   "type": "Projet artistique",
+   "period": "Septembre 2026",
+   "role": "",
+   "youtube": "",
+   "text": "Oscar & Youri — Smadja’s Set. Live from Halo Paris.",
+   "credits": "",
+   "keys": [
+    "art",
+    "photo"
+   ],
+   "visible": true,
+   "order": 11,
+   "media": []
+  },
+  {
+   "id": "s12-mac-cosmetics-equipe-a-set-1",
+   "ref": "MAC Cosmetics — Équipe A · Set 1",
+   "title": "MAC Cosmetics — Équipe A · Set 1",
+   "label": "",
+   "type": "Publicité",
+   "period": "2025",
+   "role": "Deuxième assistant réalisateur",
+   "youtube": "",
+   "text": "",
+   "credits": "",
+   "keys": [
+    "ar"
+   ],
+   "visible": true,
+   "order": 12,
+   "media": []
+  },
+  {
+   "id": "s13-dakhla-terre-de-poisson",
+   "ref": "Dakhla — Terre de poisson",
+   "title": "Dakhla — Terre de poisson",
+   "label": "",
+   "type": "Série photo",
+   "period": "",
+   "role": "",
+   "youtube": "",
+   "text": "",
+   "credits": "",
+   "keys": [
+    "photo"
+   ],
+   "visible": true,
+   "order": 13,
+   "media": []
+  },
+  {
+   "id": "s14-la-parade-antik-batik",
+   "ref": "La Parade — Antik Batik",
+   "title": "La Parade — Antik Batik",
+   "label": "",
+   "type": "Film de marque · Production",
+   "period": "Avril 2026",
+   "role": "Producteur",
+   "youtube": "",
+   "text": "Discover La parade. Inspired by retro codes from the 50s to the 80s, where structure meets attitude. Within this visual language, two figures evolve through precision and restraint, as if following a forgotten choreography. Archery and chess become echoes of past rituals, reinterpreted with a contemporary gaze, until the distance between them slowly dissolves.",
+   "credits": "",
+   "keys": [
+    "prod"
+   ],
+   "visible": true,
+   "order": 14,
+   "media": []
+  },
+  {
+   "id": "s15-comme-dhab",
+   "ref": "Comme d’hab",
+   "title": "Comme d’hab",
+   "label": "",
+   "type": "Réalisation · Production",
+   "period": "2024",
+   "role": "Réalisation · Producteur",
+   "youtube": "",
+   "text": "Montage : Lola Guilbaud. Étalonnage : Yanis Aarrouf.",
+   "credits": "",
+   "keys": [
+    "real",
+    "prod"
+   ],
+   "visible": true,
+   "order": 15,
+   "media": []
+  },
+  {
+   "id": "s16-chanel-fw24-grand-palais",
+   "ref": "Chanel FW24 — Grand Palais",
+   "title": "Chanel FW24 — Grand Palais",
+   "label": "",
+   "type": "Publicité",
+   "period": "2024",
+   "role": "Premier assistant réalisateur",
+   "youtube": "",
+   "text": "On the occasion of the show, the House is making its return to the Grand Palais, a place of culture and the privileged setting of the CHANEL shows for two decades. Today, the entrance to the Nave bears the name of Gabrielle Chanel symbolizing the close ties between the House and the Grand Palais. CHANEL is also Major Patron of this institution.",
+   "credits": "",
+   "keys": [
+    "ar"
+   ],
+   "visible": true,
+   "order": 16,
+   "media": []
+  },
+  {
+   "id": "s17-ce-que-jai-a-perdre",
+   "ref": "Ce que j’ai à perdre",
+   "title": "Ce que j’ai à perdre",
+   "label": "",
+   "type": "Réalisation · Production",
+   "period": "2024",
+   "role": "Réalisation · Producteur",
+   "youtube": "",
+   "text": "Montage et étalonnage : Lola Guilbaud.",
+   "credits": "",
+   "keys": [
+    "real",
+    "prod"
+   ],
+   "visible": true,
+   "order": 17,
+   "media": []
+  },
+  {
+   "id": "s18-chanel-spring-summer-2025-ready-to-wear",
+   "ref": "Chanel Spring-Summer 2025 Ready-to-Wear",
+   "title": "Chanel Spring-Summer 2025 Ready-to-Wear",
+   "label": "",
+   "type": "Publicité",
+   "period": "2024",
+   "role": "Deuxième assistant réalisateur · Coordination",
+   "youtube": "",
+   "text": "",
+   "credits": "",
+   "keys": [
+    "ar"
+   ],
+   "visible": true,
+   "order": 18,
+   "media": []
+  },
+  {
+   "id": "s19-babars-night",
+   "ref": "Babar’s Night",
+   "title": "Babar’s Night",
+   "label": "",
+   "type": "Projet artistique",
+   "period": "21.02.26",
+   "role": "",
+   "youtube": "",
+   "text": "Babar B2B Parea — Halo Paris.",
+   "credits": "",
+   "keys": [
+    "art",
+    "photo"
+   ],
+   "visible": true,
+   "order": 19,
+   "media": []
+  },
+  {
+   "id": "s20-chemical",
+   "ref": "Chemical",
+   "title": "Chemical",
+   "label": "",
+   "type": "Projet artistique",
+   "period": "",
+   "role": "",
+   "youtube": "",
+   "text": "",
+   "credits": "",
+   "keys": [
+    "art",
+    "real"
+   ],
+   "visible": true,
+   "order": 20,
+   "media": []
+  },
+  {
+   "id": "s21-new-york-sinvite-a-paris",
+   "ref": "New York s’invite à Paris",
+   "title": "New York s’invite à Paris",
+   "label": "",
+   "type": "Série photo",
+   "period": "",
+   "role": "",
+   "youtube": "",
+   "text": "",
+   "credits": "",
+   "keys": [
+    "photo"
+   ],
+   "visible": true,
+   "order": 21,
+   "media": []
+  },
+  {
+   "id": "s22-bali-digital-nomad",
+   "ref": "Bali — Digital Nomad",
+   "title": "Bali — Digital Nomad",
+   "label": "",
+   "type": "Série photo",
+   "period": "",
+   "role": "",
+   "youtube": "",
+   "text": "",
+   "credits": "",
+   "keys": [
+    "photo"
+   ],
+   "visible": true,
+   "order": 22,
+   "media": []
+  },
+  {
+   "id": "s23-mirage",
+   "ref": "Mirage",
+   "title": "Mirage",
+   "label": "",
+   "type": "Court-métrage",
+   "period": "Novembre 2024",
+   "role": "Premier assistant réalisateur · Producteur",
+   "youtube": "https://youtu.be/feAEK8fO8vc",
+   "text": "",
+   "credits": "",
+   "keys": [
+    "ar",
+    "prod"
+   ],
+   "visible": true,
+   "order": 23,
+   "media": []
+  },
+  {
+   "id": "s24-spinozis-night",
+   "ref": "Spinozi’s Night",
+   "title": "Spinozi’s Night",
+   "label": "",
+   "type": "Série photo",
+   "period": "",
+   "role": "",
+   "youtube": "",
+   "text": "",
+   "credits": "",
+   "keys": [
+    "photo"
+   ],
+   "visible": true,
+   "order": 24,
+   "media": []
+  },
+  {
+   "id": "s25-the-room",
+   "ref": "The Room",
+   "title": "The Room",
+   "label": "",
+   "type": "Production",
+   "period": "2024",
+   "role": "Producteur",
+   "youtube": "",
+   "text": "Non sorti.",
+   "credits": "",
+   "keys": [
+    "prod"
+   ],
+   "visible": true,
+   "order": 25,
+   "media": []
+  },
+  {
+   "id": "s26-osterbo",
+   "ref": "Osterbo",
+   "title": "Osterbo",
+   "label": "",
+   "type": "Réalisation · Production",
+   "period": "2023",
+   "role": "Réalisation · Producteur",
+   "youtube": "",
+   "text": "Non sorti.",
+   "credits": "",
+   "keys": [
+    "real",
+    "prod"
+   ],
+   "visible": true,
+   "order": 26,
+   "media": []
+  },
+  {
+   "id": "s27-palo-est-une-femme-moderne",
+   "ref": "Palo est une femme moderne",
+   "title": "Palo est une femme moderne",
+   "label": "",
+   "type": "Série photo",
+   "period": "",
+   "role": "",
+   "youtube": "",
+   "text": "",
+   "credits": "",
+   "keys": [
+    "photo"
+   ],
+   "visible": true,
+   "order": 27,
+   "media": []
+  },
+  {
+   "id": "s28-mac-cosmetics-equipe-b-social-set",
+   "ref": "MAC Cosmetics — Équipe B · Social Set",
+   "title": "MAC Cosmetics — Équipe B · Social Set",
+   "label": "",
+   "type": "Publicité",
+   "period": "2025",
+   "role": "Premier assistant réalisateur",
+   "youtube": "",
+   "text": "",
+   "credits": "",
+   "keys": [
+    "ar"
+   ],
+   "visible": true,
+   "order": 28,
+   "media": []
+  }
+ ]
+}

@@ -119,7 +119,7 @@ function renderEd(){
   <label>Texte de présentation<textarea id="f-text">${esc(p.text)}</textarea></label>
   <label>Crédits (une ligne par crédit : Rôle — Nom)<textarea id="f-cred">${esc(p.credits)}</textarea></label>
   ${site?'':`<div><div class="note" style="margin-bottom:6px">Catégories où le projet apparaît</div><div class="keys">${KEYS.map(k=>`<label><input type="checkbox" data-k="${k[0]}" ${(p.keys||[]).includes(k[0])?'checked':''}>${k[1]}</label>`).join('')}</div></div>`}
-  <div class="bar"><label class="chk"><input type="checkbox" id="f-vis" ${p.visible===false?'':'checked'}>Visible sur le site</label>${site?'':'<button class="s d" id="del">Supprimer le projet</button>'}</div>
+  <div class="bar"><label class="chk"><input type="checkbox" id="f-vis" ${p.visible===false?'':'checked'}>Visible sur le site</label><label class="chk"><input type="checkbox" id="f-hc" ${p.heroCover?'checked':''}>Couverture dans le diaporama d’accueil</label>${site?'':'<button class="s d" id="del">Supprimer le projet</button>'}</div>
   <h2 style="margin:6px 0 0">Médias ajoutés · ${media.length}</h2>
   <div class="note">${site?"Les médias déjà présents sur le site restent en place ; ceux que tu ajoutes ici viennent en plus.":""}</div>
   <div class="drop" id="drop">Glisse des photos ou des vidéos ici, ou clique pour choisir<br><span class="note">Photos réduites automatiquement. Vidéos : MP4, 90 Mo maximum chacune, idéalement 720p.</span><input type="file" id="file" multiple accept="image/*,video/mp4" hidden></div>
@@ -127,9 +127,11 @@ function renderEd(){
   <div class="media">${media.map((m,i)=>`<div class="m ${p.cover==m.path?'cover':''}"><div class="th">${m.type=='video'?(m.poster?`<img src="${esc(local[m.poster]||'../'+m.poster)}" alt="">`:'Vidéo'):`<img src="${esc(src(m))}" alt="" loading="lazy">`}</div>
   <select data-i="${i}" class="kind">${KINDS.filter(k=>m.type=='video'?['main','teaser','bts'].includes(k[0]):['shoot','photo'].includes(k[0])).map(k=>`<option value="${k[0]}" ${m.kind==k[0]?'selected':''}>${k[1]}</option>`).join('')}</select>
   <input data-i="${i}" class="cap" placeholder="Légende" value="${esc(m.caption)}">
-  <div class="row">${m.type!='video'&&!site?`<button class="s" data-a="c" data-i="${i}">Couverture</button>`:''}<button class="s d" data-a="x" data-i="${i}">Retirer</button></div></div>`).join('')}</div></div>`;
+  ${m.type!='video'?`<label class="chk"><input type="checkbox" class="hr" data-i="${i}" ${m.hero?'checked':''}>Diaporama d’accueil</label>`:''}<div class="row">${m.type!='video'&&!site?`<button class="s" data-a="c" data-i="${i}">Couverture</button>`:''}<button class="s d" data-a="x" data-i="${i}">Retirer</button></div></div>`).join('')}</div></div>`;
   const bind=(id,k)=>$(id).oninput=e=>mut(p=>{p[k]=e.target.value;if(k=='title')renderList()});
   ['title','label','type','period','role','text','credits'].forEach(k=>bind('f-'+({period:'per',credits:'cred'}[k]||k),k));bind('f-yt','youtube');
+  $('f-hc').onchange=e=>mut(p=>p.heroCover=e.target.checked);
+  $('ed').querySelectorAll('.hr').forEach(s=>s.onchange=()=>mut(p=>p.media[+s.dataset.i].hero=s.checked));
   $('f-vis').onchange=e=>mut(p=>p.visible=e.target.checked);
   $('ed').querySelectorAll('[data-k]').forEach(c=>c.onchange=()=>mut(p=>{p.keys=[...$('ed').querySelectorAll('[data-k]:checked')].map(x=>x.dataset.k)}));
   if($('del'))$('del').onclick=function(){if(!this.dataset.sure){this.dataset.sure=1;this.textContent="Confirmer ?";return}const id=cur;cur=null;data.projects=data.projects.filter(x=>x.id!=id);save();renderList();renderEd()};

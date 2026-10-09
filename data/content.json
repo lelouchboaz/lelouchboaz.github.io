@@ -53,7 +53,8 @@
    ],
    "visible": true,
    "order": 2,
-   "media": []
+   "media": [],
+   "heroCover": true
   },
   {
    "id": "s03-showreel-triiiple",
@@ -107,7 +108,8 @@
    ],
    "visible": true,
    "order": 5,
-   "media": []
+   "media": [],
+   "heroCover": true
   },
   {
    "id": "s06-vacance-a-la-mer",
@@ -125,7 +127,8 @@
    ],
    "visible": true,
    "order": 6,
-   "media": []
+   "media": [],
+   "heroCover": true
   },
   {
    "id": "s07-la-verite-braie",
@@ -143,24 +146,6 @@
    ],
    "visible": true,
    "order": 7,
-   "media": []
-  },
-  {
-   "id": "s08-reels-gma-belleville",
-   "ref": "Reels GMA Belleville",
-   "title": "Reels GMA Belleville",
-   "label": "",
-   "type": "Projet artistique",
-   "period": "",
-   "role": "",
-   "youtube": "",
-   "text": "",
-   "credits": "",
-   "keys": [
-    "art"
-   ],
-   "visible": true,
-   "order": 8,
    "media": []
   },
   {
@@ -197,7 +182,8 @@
    ],
    "visible": true,
    "order": 10,
-   "media": []
+   "media": [],
+   "heroCover": true
   },
   {
    "id": "s11-smadjas-set",
@@ -216,7 +202,8 @@
    ],
    "visible": true,
    "order": 11,
-   "media": []
+   "media": [],
+   "heroCover": true
   },
   {
    "id": "s12-mac-cosmetics-equipe-a-set-1",
@@ -363,7 +350,8 @@
    ],
    "visible": true,
    "order": 19,
-   "media": []
+   "media": [],
+   "heroCover": true
   },
   {
    "id": "s20-chemical",
@@ -400,7 +388,8 @@
    ],
    "visible": true,
    "order": 21,
-   "media": []
+   "media": [],
+   "heroCover": true
   },
   {
    "id": "s22-bali-digital-nomad",
@@ -455,7 +444,8 @@
    ],
    "visible": true,
    "order": 24,
-   "media": []
+   "media": [],
+   "heroCover": true
   },
   {
    "id": "s25-the-room",
@@ -510,7 +500,8 @@
    ],
    "visible": true,
    "order": 27,
-   "media": []
+   "media": [],
+   "heroCover": true
   },
   {
    "id": "s28-mac-cosmetics-equipe-b-social-set",

@@ -251,7 +251,7 @@ function applyContent(c){
  if(hero.length)setHero(hero);
 }
 function rebuildAfterContent(){document.querySelectorAll('#menu button[data-k]').forEach(b=>{const s=b.querySelector('small');if(s)s.textContent=cnt(b.dataset.k)+' projets'});draw();document.querySelectorAll('.rv').forEach(el=>io.observe(el))}
-fetch('data/content.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(c=>{if(c&&c.projects&&c.projects.length){applyContent(c);rebuildAfterContent()}}).catch(()=>{});
+fetch('data/content.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(c=>{if(c&&c.projects&&c.projects.length){applyContent(c);rebuildAfterContent()}}).catch(()=>{}).finally(()=>{window.openHash&&openHash()});
 
 let n=0;const t=setInterval(()=>{n+=Math.ceil(Math.random()*9);if(n>=100){n=100;clearInterval(t);setTimeout(()=>{$('ld').classList.add('out');document.body.classList.remove('lock')},250)}$('pc').textContent=n+"%"},70);
 
@@ -266,7 +266,7 @@ page=function(i,t){base(i,t);
  const box=document.createElement('div');
  box.innerHTML=`<div class="ps"><button id="cp">Copier le lien</button>${navigator.share?'<button id="sh">Partager</button>':''}</div>`+(navIdx>=0&&navList.length>1?`<div class="pn"><a class="${pv?'':'off'}" data-n="-1">← Précédent<b>${pv?E(pv.t.split(' — ')[0]):''}</b></a><a class="${nx?'':'off'}" data-n="1">Suivant →<b>${nx?E(nx.t.split(' — ')[0]):''}</b></a></div>`:'');
  $('pc2').append(...box.children);
- const url=location.origin+location.pathname+'#p-'+(i>=0?i:'t');
+ const url=location.origin+location.pathname+'#projet='+encodeURIComponent(title);
  $('cp').onclick=async()=>{try{await navigator.clipboard.writeText(url);$('cp').textContent='Lien copié ✓'}catch(e){prompt('Lien :',url)}};
  if($('sh'))$('sh').onclick=()=>navigator.share({title:title+' — Boaz Lelouch',url}).catch(()=>{});
  $('pc2').querySelectorAll('.pn a[data-n]').forEach(a=>a.onclick=()=>go(+a.dataset.n));
@@ -278,5 +278,6 @@ if(matchMedia('(hover:hover) and (pointer:fine)').matches){const c=document.crea
  addEventListener('mousemove',e=>{x=e.clientX;y=e.clientY;c.classList.add('on');const t=e.target.closest&&e.target.closest('.it,.row,.pn a');const a=e.target.closest&&e.target.closest('a,button,.ph img,.pm img');c.classList.toggle('big',!!t&&!!e.target.closest('.it'));c.classList.toggle('sm',!c.classList.contains('big')&&!!(t||a))});
  document.addEventListener('mouseleave',()=>c.classList.remove('on'));
  (function f(){cx+=(x-cx)*.22;cy+=(y-cy)*.22;c.style.transform=`translate(${cx}px,${cy}px)`;requestAnimationFrame(f)})()}
+window.openHash=()=>{const m=location.hash.match(/^#projet=(.+)$/);if(!m)return;let t;try{t=decodeURIComponent(m[1])}catch(e){return}const i=D.findIndex(d=>d.t==t);if(i>=0){history.replaceState(null,'','#p-'+i);page(i)}};
 })();
 </script></body></html>

@@ -51,5 +51,5 @@ const LINKS=[
  ]}
 ];
 const E=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;");
-document.getElementById('ls').innerHTML=LINKS.map(g=>(g.h?`<h2>${E(g.h)}</h2>`:'')+g.items.map(l=>{const ext=/^https?:/.test(l.u)&&!l.u.startsWith(BASE)?' target="_blank" rel="noopener"':'';const tx=`<div><b>${E(l.t)}</b>${l.s?`<small>${E(l.s)}</small>`:''}</div><span>↗</span>`;if(l.wide)return `<a class="l main wide" href="${l.u}"${ext}><img class="w" src="${l.wide}" alt="">${'<div class="tx">'+tx+'</div>'}</a>`;return `<a class="l${l.img?' ci':''}" href="${l.u}"${ext}>${l.img?`<img src="${l.img}" alt="">`:''}${tx}</a>`}).join('')).join('');
+document.getElementById('ls').innerHTML=LINKS.map(g=>(g.h?`<h2>${E(g.h)}</h2>`:'')+g.items.map(l=>{const ext=/^https?:/.test(l.u)&&!l.u.startsWith(BASE)?' target="_blank" rel="noopener"':'';const tx=`<div><b>${E(l.t)}</b>${l.s?`<small>${E(l.s)}</small>`:''}</div>`;if(l.wide)return `<a class="l main wide" href="${l.u}"${ext}><img class="w" src="${l.wide}" alt="">${'<div class="tx">'+tx+'</div>'}</a>`;return `<a class="l${l.img?' ci':''}" href="${l.u}"${ext}>${l.img?`<img src="${l.img}" alt="">`:''}${tx}</a>`}).join('')).join('');
 </script></body></html>

@@ -244,8 +244,9 @@ $('menu').innerHTML=C.map(c=>`<button data-k="${c[0]}">${c[1]}<small>${cnt(c[0])
 const thm=$('thm'),setT=d=>{document.documentElement.dataset.theme=d?"dark":"light";thm.textContent=d?"Mode clair":"Mode sombre";try{localStorage.setItem("theme",d?"dark":"light")}catch(e){}};thm.onclick=e=>{e.preventDefault();setT(document.documentElement.dataset.theme!="dark")};try{if(localStorage.getItem("theme")=="dark")setT(true)}catch(e){}
 const tg=()=>{const on=$('menu').classList.toggle('on');document.body.classList.toggle('lock',on);$('cat').textContent=on?'Fermer':'Menu';$('cat').setAttribute('aria-expanded',on)};
 $('cat').onclick=tg;
-document.querySelectorAll('.dis a[data-c]').forEach(a=>a.onclick=e=>{e.preventDefault();cur=a.dataset.c;shut();draw();location.hash='#travaux'});
-$('menu').onclick=e=>{if(e.target.closest('a[data-a]')){tg();return}const b=e.target.closest('button');if(!b)return;cur=b.dataset.k;tg();shut();draw();location.hash='#travaux'};
+window.goT=()=>{const tm=[];const stop=()=>tm.forEach(clearTimeout);const go=()=>{const t=document.getElementById('travaux');if(t)window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY,behavior:'instant'})};go();requestAnimationFrame(go);[200,600,1300].forEach(ms=>tm.push(setTimeout(go,ms)));['wheel','touchstart','keydown'].forEach(e=>addEventListener(e,stop,{once:true,passive:true}));try{history.replaceState(null,'',location.pathname+location.search+'#travaux')}catch(e){}};
+document.querySelectorAll('.dis a[data-c]').forEach(a=>a.onclick=e=>{e.preventDefault();cur=a.dataset.c;shut();draw();goT()});
+$('menu').onclick=e=>{if(e.target.closest('a[data-a]')){tg();return}const b=e.target.closest('button');if(!b)return;cur=b.dataset.k;tg();shut();draw();goT()};
 document.querySelector('.name').addEventListener('click',e=>{e.preventDefault();if($('menu').classList.contains('on'))tg();if(cur!='all'){cur='all';draw()}shut();history.replaceState(null,'',location.pathname+location.search);window.scrollTo({top:0,behavior:'instant'})});
 addEventListener('keydown',e=>{if(e.key=='Escape'){if($('pg').classList.contains('on'))$('px').click();else if($('menu').classList.contains('on'))tg()}});
 $('refs').innerHTML="Chanel,Cartier,MAC Cosmetics,TF1,Les Enfoirés,Antik Batik,Watch Out".split(',').map(s=>`<span>${s}</span>`).join('');

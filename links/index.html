@@ -25,7 +25,7 @@ h2{font:500 10px var(--ui);letter-spacing:.18em;color:var(--mute);margin:40px 0 
 .l span{font-size:18px;margin-left:auto}.l.ci{padding:10px 18px 10px 10px}.l img{width:64px;height:64px;object-fit:cover;flex:none}.l.wide{flex-wrap:wrap;padding:0}.l.wide img.w{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}.l.wide .tx{display:flex;justify-content:space-between;align-items:center;width:100%;padding:16px 20px}
 .main{background:var(--ink);color:var(--bg)}.main:hover{background:transparent;color:var(--ink)}.main small{color:inherit;opacity:.7}
 footer{text-align:center;color:var(--mute);margin-top:48px}
-</style></head><body><main>
+.l.ci{justify-content:flex-start;gap:16px}.go{font:500 10px var(--ui);letter-spacing:.2em;border-bottom:1px solid currentColor;padding-bottom:3px;margin-left:auto}</style></head><body><main>
 <img class="logo" src="../favicon.png" alt="BL">
 <h1>Boaz<i>Lelouch</i></h1>
 <p class="sub">Réalisateur · Photographe · Paris</p>
@@ -37,8 +37,7 @@ footer{text-align:center;color:var(--mute);margin-top:48px}
 const BASE="https://lelouchboaz.github.io/";
 const LINKS=[
  {h:null,items:[
-  {t:"Mon site",s:"Portfolio complet",u:BASE,main:1,wide:"img/site.jpg"},
-  {t:"Portfolio en PDF",s:"Télécharger",u:BASE+"pdf/portfolio.pdf"}
+  {t:"Voir mon site",s:"lelouchboaz.github.io",u:BASE,main:1,wide:"img/site.jpg"}
  ]},
  {h:"Clips",items:[
   {t:"Comme d’hab",s:"Cherki · 2024",u:BASE+"#projet=Comme%20d%E2%80%99hab",img:"img/comme-dhab.jpg"},
@@ -51,5 +50,5 @@ const LINKS=[
  ]}
 ];
 const E=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;");
-document.getElementById('ls').innerHTML=LINKS.map(g=>(g.h?`<h2>${E(g.h)}</h2>`:'')+g.items.map(l=>{const ext=/^https?:/.test(l.u)&&!l.u.startsWith(BASE)?' target="_blank" rel="noopener"':'';const tx=`<div><b>${E(l.t)}</b>${l.s?`<small>${E(l.s)}</small>`:''}</div>`;if(l.wide)return `<a class="l main wide" href="${l.u}"${ext}><img class="w" src="${l.wide}" alt="">${'<div class="tx">'+tx+'</div>'}</a>`;return `<a class="l${l.img?' ci':''}" href="${l.u}"${ext}>${l.img?`<img src="${l.img}" alt="">`:''}${tx}</a>`}).join('')).join('');
+document.getElementById('ls').innerHTML=LINKS.map(g=>(g.h?`<h2>${E(g.h)}</h2>`:'')+g.items.map(l=>{const ext=/^https?:/.test(l.u)&&!l.u.startsWith(BASE)?' target="_blank" rel="noopener"':'';const tx=`<div><b>${E(l.t)}</b>${l.s?`<small>${E(l.s)}</small>`:''}</div>${l.wide?'<span class="go">Entrer</span>':''}`;if(l.wide)return `<a class="l main wide" href="${l.u}"${ext}><img class="w" src="${l.wide}" alt="">${'<div class="tx">'+tx+'</div>'}</a>`;return `<a class="l${l.img?' ci':''}" href="${l.u}"${ext}>${l.img?`<img src="${l.img}" alt="">`:''}${tx}</a>`}).join('')).join('');
 </script></body></html>

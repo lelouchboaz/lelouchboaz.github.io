@@ -176,7 +176,7 @@ const V={"Comme d’hab": {"v": "lp/comme-dhab.mp4", "p": "lp/comme-dhab.jpg", "
 ];
 const X=(t,o)=>Object.assign(D.find(d=>d.t==t),o);
 const AF={"La vérité Braie":"af/braie.jpg","Chou-Fleur":"af/chou-fleur.jpg","Mirage":"af/mirage.jpg","Les Enfoirés 2026 — La Ballade des Enfoirés":"af/enf26.jpg","Les Enfoirés 2025 — Au pays des Enfoirés":"lp/af-enf25.jpg","Les Enfoirés 2024 — On a 35 ans":"lp/af-enf24.jpg","La Chanson Secrète":"af/chanson.jpg","Finalement":"lp/af-finalement.jpg"};
-const YT={"La vérité Braie":"Sr70G9QAQ9o","Chou-Fleur":"-3V7P8us_MA","Mirage":"feAEK8fO8vc"};
+const YT={"Comme d’hab":"1hA7PnVJ1Kw","Ce que j’ai à perdre":"aPV0n1f683Y","La vérité Braie":"Sr70G9QAQ9o","Chou-Fleur":"-3V7P8us_MA","Mirage":"feAEK8fO8vc"};
 for(const t of ["Les Enfoirés 2026 — La Ballade des Enfoirés","Les Enfoirés 2025 — Au pays des Enfoirés","Les Enfoirés 2024 — On a 35 ans","La Chanson Secrète"])X(t,{af:AF[t]});
 X("La vérité Braie",{af:AF["La vérité Braie"]});X("Chou-Fleur",{af:AF["Chou-Fleur"]});X("Mirage",{af:AF["Mirage"]});
 X("La vérité Braie",{imgs:Array.from({length:12},(_,i)=>"ph/braie_set/"+String(i+1).padStart(2,"0")+".jpg"),ih:"Photos de tournage",ic:"Photos de tournage : Melen Noguez & Elsa Desurvire"});AF["Chanel FW24 — Grand Palais"]=[1,2,3,4].map(i=>"ph/chanel/gp"+i+".jpg");X("Chanel FW24 — Grand Palais",{imgs:[1,2,3,4].map(i=>"ph/chanel/gp"+i+".jpg")});
